@@ -1,6 +1,7 @@
 import streamlit as st
 
 title = 'Education & Certificates'
+index = 4
 
 def run():
     st.title('Education')
@@ -38,6 +39,7 @@ def run():
     st.text("")
 
     st.header("Less directly relevant degrees which nonetheless deserve a mention given how much time was spent earning them")
+    
     st.subheader('[HEC Paris](https://www.hec.edu/en/overview) | Msc in Management | 2012-2015 ')
     st.text("")
     st.subheader('[Saint Petersburg State University](https://gsom.spbu.ru/en/about-gsom/) | Msc in International Business | 2014-2015')

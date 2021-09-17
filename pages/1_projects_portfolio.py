@@ -1,6 +1,7 @@
 import streamlit as st
 
 title = 'Projects portfolio'
+index = 1
 
 def run():
     st.title('Selected projects')
@@ -8,6 +9,7 @@ def run():
     st.write('')
 
     st.subheader('Natural Language Processing')
+
     st.write('**Fully-customized specialized search engine for biomedical research | 2021 | Science Feedback **')
     st.write('*BioBert (HuggingFace implementation), ElasticSearch (deployed on AWS), Streamlit*')
     st.write('- Using the PubMeb API, collection of the abstract, title and metadata of 2.3 million research articles, 20 million keywords, 30 million authors.')
@@ -23,9 +25,10 @@ def run():
     st.write("- NLP Module for Named Entity Recognition (identification of assets discussed) and sentiment analysis using Spacy")
     st.write("- Dashboard module built on Bubble displaying insights from the modules above")
     st.write("- All the above deployed on AWS virtual machines (EC2 and LightSail) using Docker, interfaced using FastAPI, using a PostgreSQL database hosted on AWS RDS")
-
     st.write('-----')
+
     st.subheader('Tabular data modeling')
+
     st.write('** Prediction of the occurrence of a disease | 2021 | Sanofi-Pasteur **')
     st.write('*Scikit-Learn, Streamlit*')
     st.write('- Epidemiological data collection')
@@ -37,10 +40,10 @@ def run():
     st.write("- Prediction of the results of sports games (football and tennis). High-sensitivity system in which a 0.3 percentage point change in accuracy tips a strategy into positive or negative territory.")
     st.write("- In-depth experiments with feature engineering, data cleaning, custom loss functions, hyperparameter tuning")
     st.write("- Over 10,000 model runs (ML/DL) tracked through Aimhub, development of custom dashboard and metrics")
-
     st.write('-----')
 
     st.subheader('Data infrastructure')
+
     st.write('** Automated sports betting system | 2019-Ongoing | Personal project **')
     st.write('*async, MollybetAPI*')
     st.write("- Development and deployment of an automated sports betting system (football and tennis)")
@@ -48,9 +51,8 @@ def run():
     st.write("- Live consolidation of data from different sources.")
     st.write("- Weekly : 4,000+ games monitored, 6 million+ data points collected, 2,000 bets placed")
 
-    st.write('-----')
-
     st.subheader('Scraping')
+
     st.write('** Scraping of a mobile application | 2021 | JB Consulting **')
     st.write('*MITM, Android Virtual Studio, APK-MITM*')
     st.write("- Reverse engineering of an Android mobile app API")
@@ -61,3 +63,4 @@ def run():
     st.write('*Selenium*')
     st.write("- Parallel scraping of odds data for 500,000 football and tennis games (20 data points per game)")
     st.write("- IP rotations to circumvent rate limiting")
+    st.write('-----')

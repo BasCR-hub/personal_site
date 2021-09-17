@@ -19,37 +19,25 @@ def import_pages(PATH_TO_PAGES):
         spec = importlib.util.spec_from_file_location(name="",location=f"{PATH_TO_PAGES}{page}")
         foo = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(foo)
-        dict_pages[foo.title] = foo.run
+        dict_pages[foo.title] = [foo.index,foo.run]
     return dict_pages
 
 dict_pages = import_pages(PATH_TO_PAGES)
 
 st.sidebar.title("Bastien Carniel's CV")
-
-
 st.sidebar.write('')
 st.sidebar.write('')
 st.sidebar.write('')
-
-page = st.sidebar.radio(
-    '',
-    dict_pages.keys(),
-    index=0 
-    )
-
-dict_pages[page]()
-
+page = st.sidebar.radio('',[elem[0] for elem in sorted(dict_pages.items(), key=lambda item: item[1][0])],index=0)
+dict_pages[page][1]()
 st.sidebar.write('')
 st.sidebar.write('')
 st.sidebar.write('')
-
-
 st.sidebar.title("About this mini-site")
-st.sidebar.info(
-    "This 100% Python mini-app was built and hosted using the amazing [Streamlit](https://streamlit.io) toolkit.")
-
+st.sidebar.info("This 100% Python mini-app was built and hosted using the amazing [Streamlit](https://streamlit.io) toolkit.")
 st.sidebar.write('')
 st.sidebar.write('')
 st.sidebar.write('')
-
 st.sidebar.write('''Think we could work together ? Please get in touch on [**LinkedIn**](https://www.linkedin.com/in/bastien-carniel-243690b9/), by [**email**](mailto:carnielb@gmail.com), or on [**Malt**](https://www.malt.fr/profile/bastiencarniel).''')
+
+
