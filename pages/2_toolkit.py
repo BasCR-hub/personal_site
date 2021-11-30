@@ -17,7 +17,7 @@ def run():
 
     st.subheader('Specialized packages')
     st.write('**Natural Language Processing** : HuggingFace Transformers | Sentence Transformers | Spacy | Fast.ai | NLTK | FuzzyWuzzy | ')
-    st.write('**Computer Vision ** : OpenCV | Fast.ai | Pytessarct')
+    st.write('**Computer Vision ** : OpenCV | Fast.ai | Pytesseract')
     st.write('')
 
     st.subheader('Cloud')

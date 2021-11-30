@@ -10,6 +10,12 @@ def run():
 
     st.subheader('Natural Language Processing')
 
+    st.write('**Biomedical NER | 2021 | Signia Therapeutics **')
+    st.write('*SciSpacy, FAISS, Scibert (HuggingFace implementation)*')
+    st.write('- Domain-specific NER on large biomedical corpora.')
+    st.write('- Creation of a number of vector search spaces using canonical databases, embedded using SciBert.')
+    st.write('- FAISS index for efficient retrieval of nearest neighbours from these vector spaces.')
+
     st.write('**Fully-customized specialized search engine for biomedical research | 2021 | Science Feedback **')
     st.write('*BioBert (HuggingFace implementation), ElasticSearch (deployed on AWS), Streamlit*')
     st.write('- Using the PubMeb API, collection of the abstract, title and metadata of 2.3 million research articles, 20 million keywords, 30 million authors.')
