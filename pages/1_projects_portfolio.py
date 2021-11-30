@@ -41,10 +41,13 @@ def run():
     st.write('- Development of a regression model to predict the DALYs of a disease based on epidemiological parameters (R-sq. of .965).')
     st.write("- Deployment of a Streamlit-based webapp for non-technical users to be able to make predictions.")
 
+    st.write('** Data analysis | 2021 | Sanofi-Pasteur **')
+    st.write('*Pandas*')
+    st.write('- 100% Pandas data analysis project to extract consolidated aggregates from multiple data tables')
+
     st.write('** Sports game results predictions | 2019-Ongoing | Personal project **')
     st.write('*Scikit-Learn, Tensorflow, Catboost, Matplotlib, Seaborn, Aimhub*')
     st.write("- Prediction of the results of sports games (football and tennis). High-sensitivity system in which a 0.3 percentage point change in accuracy tips a strategy into positive or negative territory.")
-    st.write("- In-depth experiments with feature engineering, data cleaning, custom loss functions, hyperparameter tuning")
     st.write("- Over 10,000 model runs (ML/DL) tracked through Aimhub, development of custom dashboard and metrics")
     st.write('-----')
 
@@ -53,7 +56,7 @@ def run():
     st.write('** Automated sports betting system | 2019-Ongoing | Personal project **')
     st.write('*async, MollybetAPI*')
     st.write("- Development and deployment of an automated sports betting system (football and tennis)")
-    st.write("- Extremely strong production constraints linked to the volume and the in-game nature of the bets placed : 99.99% uptime, 99.5% errorless data, 2-second system refresh intervals.")
+    st.write("- Strong production constraints linked to the volume and the in-game nature of the bets placed : 99.99% uptime, 99.5% errorless data, 2-second system refresh intervals.")
     st.write("- Live consolidation of data from different sources.")
     st.write("- Weekly : 4,000+ games monitored, 6 million+ data points collected, 2,000 bets placed")
 
